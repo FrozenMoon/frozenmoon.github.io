@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title><![CDATA[FrozenMoon]]></title>
-  
+  <subtitle><![CDATA[FrozenMoon]]></subtitle>
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2015-05-11T09:26:07.925Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://frozenmoon.github.io/"/>
+  <updated>2015-05-11T09:27:16.138Z</updated>
+  <id>http://frozenmoon.github.io/</id>
   
   <author>
     <name><![CDATA[FrozenMoon]]></name>
@@ -16,18 +16,16 @@
   
   <entry>
     <title></title>
-    <link href="http://yoursite.com/2015/05/11/hello-world/"/>
-    <id>http://yoursite.com/2015/05/11/hello-world/</id>
-    <published>2015-05-11T09:26:29.909Z</published>
-    <updated>2015-05-11T09:26:07.925Z</updated>
+    <link href="http://frozenmoon.github.io/2015/05/11/hello-world/"/>
+    <id>http://frozenmoon.github.io/2015/05/11/hello-world/</id>
+    <published>2015-05-11T09:27:16.138Z</published>
+    <updated>2015-05-11T09:27:16.138Z</updated>
     <content type="html"><![CDATA[<h1 id="Hello_World">Hello  World</h1><hr>
 <p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
-<hr>
 ]]></content>
     <summary type="html">
     <![CDATA[<h1 id="Hello_World">Hello  World</h1><hr>
 <p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
-<hr>
 ]]>
     </summary>
     
