@@ -4,7 +4,7 @@
   <subtitle><![CDATA[I like game and cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2015-05-11T09:27:16.138Z</updated>
+  <updated>2015-05-11T11:24:17.111Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -15,19 +15,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://frozenmoon.github.io/2015/05/11/hello-world/"/>
-    <id>http://frozenmoon.github.io/2015/05/11/hello-world/</id>
-    <published>2015-05-11T09:27:16.138Z</published>
-    <updated>2015-05-11T09:27:16.138Z</updated>
-    <content type="html"><![CDATA[<h1 id="Hello_World">Hello  World</h1><hr>
-<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+    <title><![CDATA[读与写]]></title>
+    <link href="http://frozenmoon.github.io/2015/05/11/new/"/>
+    <id>http://frozenmoon.github.io/2015/05/11/new/</id>
+    <published>2015-05-11T11:20:43.000Z</published>
+    <updated>2015-05-11T11:24:17.111Z</updated>
+    <content type="html"><![CDATA[<p>hexo 还需继续研究哦！</p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="Hello_World">Hello  World</h1><hr>
-<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+    <![CDATA[<p>hexo 还需继续研究哦！</p>
 ]]>
     </summary>
+    
+      <category term="mix" scheme="http://frozenmoon.github.io/tags/mix/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello  World]]></title>
+    <link href="http://frozenmoon.github.io/2015/05/11/hello-world/"/>
+    <id>http://frozenmoon.github.io/2015/05/11/hello-world/</id>
+    <published>2015-05-11T09:20:43.000Z</published>
+    <updated>2015-05-11T11:24:20.868Z</updated>
+    <content type="html"><![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+]]>
+    </summary>
+    
+      <category term="mix" scheme="http://frozenmoon.github.io/tags/mix/"/>
     
   </entry>
   
