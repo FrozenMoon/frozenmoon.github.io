@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title><![CDATA[FrozenMoon]]></title>
-  <subtitle><![CDATA[I like game and cat]]></subtitle>
+  <title><![CDATA[FrozenMoon Blog]]></title>
+  <subtitle><![CDATA[product,game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
   <updated>2015-05-11T11:24:17.111Z</updated>
