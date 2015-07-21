@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Ui编辑器优化 | FrozenMoon Blog</title>
+  <title>UI编辑器优化 | FrozenMoon Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="说点什么吧最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ui编辑器优化">
+<meta property="og:title" content="UI编辑器优化">
 <meta property="og:url" content="http://frozenmoon.github.io/2015/07/21/ui编辑器优化/index.html">
 <meta property="og:site_name" content="FrozenMoon Blog">
 <meta property="og:description" content="说点什么吧最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ui编辑器优化">
+<meta name="twitter:title" content="UI编辑器优化">
 <meta name="twitter:description" content="说点什么吧最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
   
     <link rel="alternative" href="/atom.xml" title="FrozenMoon Blog" type="application/atom+xml">
@@ -107,7 +107,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/mix/" style="font-size: 20px;">mix</a><a href="/tags/program/" style="font-size: 10px;">program</a><a href="/tags/work/" style="font-size: 10px;">work</a>
+						<a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/mix/" style="font-size: NaNpx;">mix</a><a href="/tags/program/" style="font-size: NaNpx;">program</a><a href="/tags/work/" style="font-size: NaNpx;">work</a>
 					</div>
 				</section>
 				
@@ -186,7 +186,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Ui编辑器优化
+      UI编辑器优化
     </h1>
   
 
@@ -210,24 +210,24 @@
 <a id="more"></a>
 <hr>
 <h2 id="改造目的">改造目的</h2><ul>
-<li>提高开发效率</li>
-<li>在尽可能少改动的前提下，解决热点需求即可</li>
+<li>提高开发效率。</li>
+<li>在尽可能少改动的前提下，解决热点需求即可。</li>
 </ul>
 <hr>
-<h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧。应该在出生后就没怎么改进过。MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
+<h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧，应该在出生后就没怎么改进过。<br>   MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D。<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
 <hr>
 <h2 id="改造点">改造点</h2><ol>
-<li><p>界面布局调整</p>
+<li><p>界面布局调整。</p>
 </li>
-<li><p>ui列表界面：根据首字母进行排序显示，搜索功能</p>
+<li><p>ui列表界面：根据首字母进行排序显示，搜索功能。</p>
 </li>
-<li><p>新建ui窗口流程简化： 一键生成，默认模版</p>
+<li><p>新建ui窗口流程简化： 一键生成，默认模版。</p>
 </li>
-<li><p>新建控件优化：默认控件模版</p>
+<li><p>新建控件优化：默认控件模版。</p>
 </li>
-<li><p>编辑器模式下控件默认可拖动</p>
+<li><p>编辑器模式下控件默认可拖动。</p>
 </li>
-<li><p>重载脚本优化，支持重载有obj的ui</p>
+<li><p>重载脚本优化，支持重载有obj的ui。</p>
 </li>
 </ol>
 <hr>
@@ -235,7 +235,7 @@
 <li>ui列表界面：原来的设计只是简单的读取ui列表，放入ListView中</li>
 </ol>
 <ul>
-<li><p>痛点1：列表显示非常杂乱，且没有排序规则</p>
+<li><p>痛点1：列表显示非常杂乱，且没有排序规则。</p>
 <blockquote>
 <p>根据首字母进行排序：CListView.SortItem 搞定。</p>
 </blockquote>
@@ -278,7 +278,7 @@
   
   
     <a href="/2015/05/11/读读写写/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">读与写</div>
+      <div class="article-nav-title">hexo 使用之路</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -307,7 +307,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="ui编辑器优化" data-title="Ui编辑器优化" data-url="http://frozenmoon.github.io/2015/07/21/ui编辑器优化/"></div>
+	<div class="ds-thread" data-thread-key="ui编辑器优化" data-title="UI编辑器优化" data-url="http://frozenmoon.github.io/2015/07/21/ui编辑器优化/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

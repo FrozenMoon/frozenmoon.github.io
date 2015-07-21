@@ -4,7 +4,7 @@
   <subtitle><![CDATA[product,game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2015-07-21T09:37:59.449Z</updated>
+  <updated>2015-07-21T09:55:52.423Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -15,33 +15,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[Ui编辑器优化]]></title>
+    <title><![CDATA[UI编辑器优化]]></title>
     <link href="http://frozenmoon.github.io/2015/07/21/ui%E7%BC%96%E8%BE%91%E5%99%A8%E4%BC%98%E5%8C%96/"/>
     <id>http://frozenmoon.github.io/2015/07/21/ui编辑器优化/</id>
     <published>2015-07-21T09:20:43.000Z</published>
-    <updated>2015-07-21T09:37:59.449Z</updated>
+    <updated>2015-07-21T09:55:52.423Z</updated>
     <content type="html"><![CDATA[<h2 id="说点什么吧">说点什么吧</h2><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>
 <a id="more"></a>
 <hr>
 <h2 id="改造目的">改造目的</h2><ul>
-<li>提高开发效率</li>
-<li>在尽可能少改动的前提下，解决热点需求即可</li>
+<li>提高开发效率。</li>
+<li>在尽可能少改动的前提下，解决热点需求即可。</li>
 </ul>
 <hr>
-<h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧。应该在出生后就没怎么改进过。MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
+<h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧，应该在出生后就没怎么改进过。<br>   MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D。<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
 <hr>
 <h2 id="改造点">改造点</h2><ol>
-<li><p>界面布局调整</p>
+<li><p>界面布局调整。</p>
 </li>
-<li><p>ui列表界面：根据首字母进行排序显示，搜索功能</p>
+<li><p>ui列表界面：根据首字母进行排序显示，搜索功能。</p>
 </li>
-<li><p>新建ui窗口流程简化： 一键生成，默认模版</p>
+<li><p>新建ui窗口流程简化： 一键生成，默认模版。</p>
 </li>
-<li><p>新建控件优化：默认控件模版</p>
+<li><p>新建控件优化：默认控件模版。</p>
 </li>
-<li><p>编辑器模式下控件默认可拖动</p>
+<li><p>编辑器模式下控件默认可拖动。</p>
 </li>
-<li><p>重载脚本优化，支持重载有obj的ui</p>
+<li><p>重载脚本优化，支持重载有obj的ui。</p>
 </li>
 </ol>
 <hr>
@@ -49,7 +49,7 @@
 <li>ui列表界面：原来的设计只是简单的读取ui列表，放入ListView中</li>
 </ol>
 <ul>
-<li><p>痛点1：列表显示非常杂乱，且没有排序规则</p>
+<li><p>痛点1：列表显示非常杂乱，且没有排序规则。</p>
 <blockquote>
 <p>根据首字母进行排序：CListView.SortItem 搞定。</p>
 </blockquote>
@@ -94,19 +94,21 @@
   </entry>
   
   <entry>
-    <title><![CDATA[读与写]]></title>
+    <title><![CDATA[hexo 使用之路]]></title>
     <link href="http://frozenmoon.github.io/2015/05/11/%E8%AF%BB%E8%AF%BB%E5%86%99%E5%86%99/"/>
     <id>http://frozenmoon.github.io/2015/05/11/读读写写/</id>
     <published>2015-05-11T11:20:43.000Z</published>
-    <updated>2015-05-11T11:24:17.111Z</updated>
-    <content type="html"><![CDATA[<p>hexo 还需继续研究哦！</p>
+    <updated>2015-07-21T10:18:57.311Z</updated>
+    <content type="html"><![CDATA[<h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
+<hr>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>hexo 还需继续研究哦！</p>
+    <![CDATA[<h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
+<hr>
 ]]>
     </summary>
     
-      <category term="mix" scheme="http://frozenmoon.github.io/tags/mix/"/>
+      <category term="hexo" scheme="http://frozenmoon.github.io/tags/hexo/"/>
     
   </entry>
   
