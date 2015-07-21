@@ -4,7 +4,7 @@
   <subtitle><![CDATA[product,game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2015-05-11T11:24:17.111Z</updated>
+  <updated>2015-07-21T09:21:09.473Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -13,6 +13,85 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Ui编辑器优化]]></title>
+    <link href="http://frozenmoon.github.io/2015/07/21/ui%E7%BC%96%E8%BE%91%E5%99%A8%E4%BC%98%E5%8C%96/"/>
+    <id>http://frozenmoon.github.io/2015/07/21/ui编辑器优化/</id>
+    <published>2015-07-21T09:20:43.000Z</published>
+    <updated>2015-07-21T09:21:09.473Z</updated>
+    <content type="html"><![CDATA[<h1 id="ui编辑器改造">ui编辑器改造</h1><hr>
+<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
+</code></pre><hr>
+<h2 id="改造目的">改造目的</h2><ul>
+<li>提高开发效率</li>
+<li>在尽可能少改动的前提下，解决热点需求即可</li>
+</ul>
+<hr>
+<h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧。应该在出生后就没怎么改进过。MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
+<hr>
+<h2 id="改造点">改造点</h2><ol>
+<li><p>界面布局调整</p>
+</li>
+<li><p>ui列表界面：根据首字母进行排序显示，搜索功能</p>
+</li>
+<li><p>新建ui窗口流程简化： 一键生成，默认模版</p>
+</li>
+<li><p>新建控件优化：默认控件模版</p>
+</li>
+<li><p>编辑器模式下控件默认可拖动</p>
+</li>
+<li><p>重载脚本优化，支持重载有obj的ui</p>
+</li>
+</ol>
+<hr>
+<h2 id="解决方案">解决方案</h2><ol>
+<li>ui列表界面：原来的设计只是简单的读取ui列表，放入ListView中</li>
+</ol>
+<ul>
+<li><p>痛点1：列表显示非常杂乱，且没有排序规则</p>
+<blockquote>
+<p>根据首字母进行排序：CListView.SortItem 搞定。</p>
+</blockquote>
+</li>
+<li><p>痛点2：没有搜索功能，要查找某个ui的时候只能靠人肉！</p>
+<blockquote>
+<p>搜索优化：最初的想法是加入一个edit，在输入变化的时候自动选中对应的item项。但是在尝试做了之后发现几个问题：<br>ListView的选中功能实在太弱，并且需要具有焦点的时候才能选中（有总是选中的属性，但是不符合需求），尝试未果之后考虑有没有其他的方式。<br>最后决定用动态删减ListViewItem的方式来解决这个问题：每次输入变化的时候，清空ListView，遍历ui列表，insert符合要求的ui。</p>
+</blockquote>
+</li>
+<li><p>痛点3：由于加入搜索功能，dlg打开的时候焦点默认给到edit：</p>
+<blockquote>
+<p>细节更闪亮:D</p>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li>新建窗口</li>
+</ol>
+<ul>
+<li>痛点1：之前添加一个ui非常麻烦，要手动添加很多东西，而且是程序自己来干这个事情，费时费力。<blockquote>
+<p>在编辑器提供一键创建窗口，可以让策划或者ui设计师来制作ui。<br>基本都是字符串和文件操作，由于原有的体系比较繁杂，有部分硬编码，健壮性稍差。</p>
+</blockquote>
+</li>
+</ul>
+<p>n. 其他细节</p>
+<ul>
+<li><p>打开ui后，控件树默认展开root项。</p>
+</li>
+<li><p>重载脚本优化，支持重载有obj的ui，这是个bug。。之前一直以为是设计上的原因，绕弯路处理了很久，终于解决了。</p>
+</li>
+</ul>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h1 id="ui编辑器改造">ui编辑器改造</h1><hr>
+<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
+</code></pre><hr>
+<h2 id="改]]>
+    </summary>
+    
+      <category term="work,program" scheme="http://frozenmoon.github.io/tags/work-program/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[读与写]]></title>
