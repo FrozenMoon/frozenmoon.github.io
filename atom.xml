@@ -4,7 +4,7 @@
   <subtitle><![CDATA[product,game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2015-07-21T09:21:09.473Z</updated>
+  <updated>2015-07-21T09:37:59.449Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -19,10 +19,10 @@
     <link href="http://frozenmoon.github.io/2015/07/21/ui%E7%BC%96%E8%BE%91%E5%99%A8%E4%BC%98%E5%8C%96/"/>
     <id>http://frozenmoon.github.io/2015/07/21/ui编辑器优化/</id>
     <published>2015-07-21T09:20:43.000Z</published>
-    <updated>2015-07-21T09:21:09.473Z</updated>
-    <content type="html"><![CDATA[<h1 id="ui编辑器改造">ui编辑器改造</h1><hr>
-<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
-</code></pre><hr>
+    <updated>2015-07-21T09:37:59.449Z</updated>
+    <content type="html"><![CDATA[<h2 id="说点什么吧">说点什么吧</h2><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>
+<a id="more"></a>
+<hr>
 <h2 id="改造目的">改造目的</h2><ul>
 <li>提高开发效率</li>
 <li>在尽可能少改动的前提下，解决热点需求即可</li>
@@ -83,13 +83,13 @@
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h1 id="ui编辑器改造">ui编辑器改造</h1><hr>
-<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
-</code></pre><hr>
-<h2 id="改]]>
+    <![CDATA[<h2 id="说点什么吧">说点什么吧</h2><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>]]>
+    
     </summary>
     
-      <category term="work,program" scheme="http://frozenmoon.github.io/tags/work-program/"/>
+      <category term="program" scheme="http://frozenmoon.github.io/tags/program/"/>
+    
+      <category term="work" scheme="http://frozenmoon.github.io/tags/work/"/>
     
   </entry>
   
