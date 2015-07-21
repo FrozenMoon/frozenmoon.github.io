@@ -98,14 +98,15 @@
     <link href="http://frozenmoon.github.io/2015/05/11/%E8%AF%BB%E8%AF%BB%E5%86%99%E5%86%99/"/>
     <id>http://frozenmoon.github.io/2015/05/11/读读写写/</id>
     <published>2015-05-11T11:20:43.000Z</published>
-    <updated>2015-07-21T10:18:57.311Z</updated>
-    <content type="html"><![CDATA[<h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
+    <updated>2015-07-21T10:19:55.127Z</updated>
+    <content type="html"><![CDATA[<p>记录使用hexo的技巧</p>
+<a id="more"></a>
+<h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
 <hr>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
-<hr>
-]]>
+    <![CDATA[<p>记录使用hexo的技巧</p>]]>
+    
     </summary>
     
       <category term="hexo" scheme="http://frozenmoon.github.io/tags/hexo/"/>
