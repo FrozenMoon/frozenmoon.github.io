@@ -1,0 +1,709 @@
+<!doctype html>
+<html class="theme-next use-motion theme-next-mist">
+<head>
+    
+
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+  <link rel="stylesheet" type="text/css" href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5"/>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/main.css?v=0.4.4"/>
+
+
+    <meta name="description" content="game,cat" />
+
+
+
+  <meta name="keywords" content="work," />
+
+
+
+  <link rel="alternate" href="/atom.xml" title="FrozenMoon" type="application/atom+xml" />
+
+
+
+  <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
+
+
+<meta name="description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
+最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="从vs2005升级到vs2013">
+<meta property="og:url" content="http://frozenmoon.github.io/2015/08/18/vs2005升级vs2013/index.html">
+<meta property="og:site_name" content="FrozenMoon">
+<meta property="og:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
+最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="从vs2005升级到vs2013">
+<meta name="twitter:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
+最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: 'hide'
+  };
+</script>
+
+    <title> 从vs2005升级到vs2013 // FrozenMoon </title>
+</head>
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<!--[if lte IE 8]>
+  <div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;margin:0 auto;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+      <img src="http://7u2nvr.com1.z0.glb.clouddn.com/picouterie.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today or use other browser ,like chrome firefox safari."
+           style='margin-left:auto;margin-right:auto;display: block;'/>
+    </a>
+  </div>
+<![endif]-->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-65406722-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+<div class="container one-column page-post-detail">
+    <div class="headband"></div>
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+        <div class="header-inner"><h1 class="site-meta">
+  <span class="logo-line-before"><i></i></span>
+  <a href="/" class="brand" rel="start">
+      <span class="logo">
+        <i class="icon-logo"></i>
+      </span>
+      <span class="site-title">FrozenMoon</span>
+  </a>
+  <span class="logo-line-after"><i></i></span>
+</h1>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu ">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            <i class="menu-item-icon icon-home"></i> <br />
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            <i class="menu-item-icon icon-about"></i> <br />
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            <i class="menu-item-icon icon-archives"></i> <br />
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            <i class="menu-item-icon icon-tags"></i> <br />
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            <i class="menu-item-icon icon-commonweal"></i> <br />
+            公益404
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+        </div>
+    </header>
+
+    <main id="main" class="main">
+        <div class="main-inner">
+            <div id="content" class="content">
+                
+
+  <div id="posts" class="posts-expand">
+    
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      
+      
+        <h1 class="post-title" itemprop="name headline">
+          
+          
+            
+              从vs2005升级到vs2013
+            
+          
+        </h1>
+      
+
+      <div class="post-meta">
+        <span class="post-time">
+          发表于
+          <time itemprop="dateCreated" datetime="2015-08-18T16:20:43+08:00" content="2015-08-18">
+            2015-08-18
+          </time>
+        </span>
+
+        
+
+        
+          
+            <span class="post-comments-count">
+              &nbsp; | &nbsp;
+              <a href="/2015/08/18/vs2005升级vs2013/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2015/08/18/vs2005升级vs2013/" itemprop="commentsCount"></span>
+              </a>
+            </span>
+          
+        
+      </div>
+    </header>
+
+    <div class="post-body">
+
+      
+      
+
+      
+        <span itemprop="articleBody"><p>由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。<br>但是都过去10年了，是时候拥抱一下新的东西了:D。</p>
+<p>最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。<br>升级的过程中遇到各种问题，还是挺有意思的。</p>
+<a id="more"></a>
+<hr>
+<h2 id="准备">准备</h2><p>说起来惭愧，工作两年多还没有系统的了解过项目的工程结构，趁这个机会也可以系统的了解下。<br>结果着实吓了一跳，单是solution就有5个，project大大小小有上百个。当然了，实际用到的没有这么多 ，有部分的是以前用的工具或者已经废弃的功能。<br>由于我们平时开发都是在window上进行的，包括server也是自己编译用来单服测试，所以就存在一套linux编译的工具链，这部分成了升级的头疼问题。</p>
+<p>大概了解了一下vs2013的工程构建体系，在vs2010之后微软大改了一次构建体系，使用<strong>MSBuild</strong>系统来构建vs项目，和之前的差别还是挺大的。<br>比如05的工程后缀名是<strong>vcproj</strong>，而13的是<strong>vcxpro</strong>。之后比较了一下同样一个工程下这两种格式，发现后者比前者精简不少，确实进步了。<br>还有不得不说下MSDN的资料越来越周全了，包括vs2013工程的各种参数解释都有，还有常见的warming和error的解决方法。</p>
+<p>开始之前整理了一下几个目标点：</p>
+<ul>
+<li>保持原来的工程结构，也就是满足同时用05和13进行开发</li>
+<li>尽量少的代码改动，防止出现bug</li>
+<li>梳理工程间关联</li>
+<li>修改版本发布工具（未完成）</li>
+</ul>
+<hr>
+<h2 id="开始">开始</h2><p>首先先复制一份sln，改名字，用13打开，再自动让它自动转换一下。<br>既然是自动转换，肯定是会有问题的，建议工程比较多的时候不要转换后就直接编译solution，而是从耦合度较小的工程开始一个个编译。<br>而且是每个工程都要过一遍，因为vs的自动转换非常不靠谱！</p>
+<p>&lt; 顺序可能是：Local lib —-&gt; 3rd lib —-&gt; local dll —-&gt; local exe。local表示自己编写的工程。</p>
+<p>我们的client相对server来说，引用的lib比较多，那就先从client开始吧，难的骨头先啃掉。而client不仅仅就是一个exe，还包括各种dll，大概数了一下相关工程有30+，杯具的是我开始做的时候没想到要上InCrediBuild，导致花在编译上的时间就很多了(哭)。建议有条件的还是早早上InCrediBuild吧，能节省不少时间，13的编译速度相对05来说还是慢了一点的。<br>在这里挑出几个值得注意的点说一下：</p>
+<h3 id="兼容xp及以上的系统。">兼容xp及以上的系统。</h3><p>开始我并没有注意到这个严重的问题，后来在xp上测试的时候才发现之前一直没考虑到，所以走了一点弯路了。<br>解决方式已有很多现成的了，知乎这个回答得比较全 <a href="http://www.zhihu.com/question/25415940" target="_blank" rel="external">http://www.zhihu.com/question/25415940</a></p>
+<p>可能你会遇到下面这些问题：</p>
+<pre><code>warning C4005: <span class="string">'__useHeader'</span> : macro redefinition
+C/C<span class="subst">++</span> <span class="subst">-&gt; </span>Preprocessor<span class="subst">-&gt; </span>add <span class="subst">-&gt; </span>_USING_V110_SDK71_; 
+
+warning MSB8030: The linker switch <span class="string">"Minimum Required Version"</span> requires <span class="string">"SubSystem"</span> <span class="keyword">to</span> be <span class="built_in">set</span>
+Linker <span class="subst">-&gt; </span>System <span class="subst">-&gt; </span>Minimum Required Version <span class="subst">-&gt; </span><span class="number">5.01</span>;
+Linker <span class="subst">-&gt; </span>System <span class="subst">-&gt; </span>SubSystem <span class="subst">-&gt; </span>windows（<span class="literal">or</span> concole 要看你的工程性质）
+</code></pre><p>还有其他的就不一一列举了，大部分都可以通过google解决，千万不要用baidu。<br>这里最有用的技巧是善用<strong>Preprocessor</strong>（预编译宏）。在工程里设置好之后就不用在代码里面写死了，方便管理。</p>
+<h3 id="重新编译第三方库">重新编译第三方库</h3><p>其实local lib的问题还好解决，但是一些3rd lib就有点麻烦了。因为升级得首先保证稳定性，不能随意升级，比如：</p>
+<pre><code>boost: Unknown compiler <span class="built_in">version</span> - please run <span class="operator">the</span> configure tests <span class="operator">and</span> report <span class="operator">the</span> results
+在<span class="built_in">include</span>\boost\config\compiler\visualc.hpp这个文件可以看到条信息是怎么产生的，
+还是由于我们使用的boost库版本太老了。
+只好去取了一下最新的boost库的这个文件来修改，支持vs2013的编译就好了。
+
+还有Protobuf，需要重新编译出lib，另外还得区分<span class="number">13</span>和<span class="number">05</span>编译的版本，分别连接。
+</code></pre><p>还有一个常见的warming：</p>
+<pre><code>warning MSB8012: TargetPath xxx does <span class="keyword">not</span> match the <span class="keyword">Library</span><span class="attribute">'s</span> OutputFile <span class="keyword">property</span> value xxx
+原因是General的Output Directory 和 Link 的 OutPut <span class="keyword">File</span> 输出文件路径不一致。
+推荐在ganeral的Output Directory 写上你想要输出的路径，
+然后在Link的OutPutFile 填上$(OutDir)$(TargetName)$(TargetExt)，如果需要改变也只需要改一处。
+</code></pre><p>历尽千辛万苦终于搞好了client的编译，自己测试一下暂时没发现啥问题，但是还是得经过严密的测试才能发布出去，比如跨平台可能出现的问题。<br>对了，关于MFC库缺失的问题，我们并不是全部连接静态库的做法，而是把需要的库文件打包在游戏安装包里，数M的dll库相对数G的客户端来说，不算什么的。</p>
+<p>接下来是server。<br>server关联的工程并不多，而且大部分坑在编译client的时候已经遇到过，所以整个编译过程还算顺利，但是测试的时候发现登录的时候会宕机。<br>调试了一下，发现是一个比较隐晦的STL的问题，直接上测试代码吧：</p>
+<pre><code><span class="comment">#include &lt;stdio.h&gt;</span>
+<span class="comment">#include &lt;vector&gt;</span>
+
+typedef std::vector&lt;<span class="type">int</span>&gt; <span class="type">TEST_V</span>;
+
+class <span class="type">TEST_C</span>
+{
+public:
+    <span class="type">TEST_V</span> t_v;
+    <span class="keyword">const</span> <span class="type">TEST_V</span>&amp; <span class="type">GetVR</span>() <span class="keyword">const</span> { <span class="keyword">return</span> t_v; };
+};
+
+<span class="type">int</span> main()
+{
+    <span class="type">TEST_C</span> c;
+    memset(&amp;c, <span class="number">0</span>, sizeof(c)); // vector不能被memset！
+    <span class="keyword">const</span> <span class="type">TEST_V</span>&amp; <span class="keyword">ref</span> = c.<span class="type">GetVR</span>();
+    <span class="keyword">for</span> (<span class="type">TEST_V</span>::const_iterator it = <span class="keyword">ref</span>.begin(); it != <span class="keyword">ref</span>.<span class="keyword">end</span>(); ++it){}
+    system(<span class="string">"pause"</span>);
+    <span class="keyword">return</span> <span class="number">0</span>;
+}
+</code></pre><p>跟进去发现_Myproxy为NULL，说明vector的结构已经被破坏了：</p>
+<pre><code><span class="keyword">const</span> _Container_base12 *_Getcont() <span class="keyword">const</span>
+{    // get owning container
+<span class="keyword">return</span> (_Myproxy == <span class="number">0</span> ? <span class="number">0</span> : _Myproxy-&gt;_Mycont);
+}
+
+<span class="comment">#if _ITERATOR_DEBUG_LEVEL == 2</span>
+<span class="type">void</span> _Compat(<span class="keyword">const</span> _Myiter&amp; _Right) <span class="keyword">const</span>
+    {    // test <span class="keyword">for</span> compatible <span class="keyword">iterator</span> pair
+    <span class="keyword">if</span> (this-&gt;_Getcont() == <span class="number">0</span>
+        || this-&gt;_Getcont() != _Right._Getcont())
+        {    // report error
+        _DEBUG_ERROR(<span class="string">"vector iterators incompatible"</span>);
+        _SCL_SECURE_INVALID_ARGUMENT;
+        }
+    }
+
+ <span class="comment">#elif _ITERATOR_DEBUG_LEVEL == 1</span>
+    <span class="type">void</span> _Compat(<span class="keyword">const</span> _Myiter&amp; _Right) <span class="keyword">const</span>
+        {    // test <span class="keyword">for</span> compatible <span class="keyword">iterator</span> pair
+        _SCL_SECURE_VALIDATE(this-&gt;_Getcont() != <span class="number">0</span>);
+        _SCL_SECURE_VALIDATE_RANGE(this-&gt;_Getcont() == _Right._Getcont());
+        }
+
+ <span class="comment">#else /* _ITERATOR_DEBUG_LEVEL == 0 */</span>
+    <span class="type">void</span> _Compat(<span class="keyword">const</span> _Myiter&amp;) <span class="keyword">const</span>
+        {    // test <span class="keyword">for</span> compatible <span class="keyword">iterator</span> pair
+        }
+ <span class="comment">#endif /* _ITERATOR_DEBUG_LEVEL */</span>
+</code></pre><p>更为隐蔽的是，release版本不会有这个异常。而在vs2005上，不管debug,release都不会有异常（因为版本不一致）。<br>这样的写法肯定是存在问题的，还好这次发现了，也可以改下。</p>
+<hr>
+<h2 id="最后">最后</h2><p>最终的结果是，改动了7处代码，每个solution和proj都有对应的2013的版本，只需要把新加的这部分入库管理就好了。之后想用13开发的同事打开xx2013.sln，还继续想用05的打开原来的sln。<br>但是有一个不好的地方在于，<strong>新加文件或者工程会比较麻烦，得两种solution都要加上</strong>。</p>
+<h3 id="未解决的问题：">未解决的问题：</h3><p>还需要修改我们的版本发布工具链，因为我们要发布出去的程序都有一套编译机来进行编译，现在只能说能让我们开发的时候用到。还不能发布给用户使用。不过呢，这个过程还需慢慢推进，为了稳(mei)定(you)性(bug)。<br>client只需要在对应的编译机上安装vs2013，然后改一下编译工具应该就好了的。而真正难搞的问题是linux的编译。我们的linux编译工具是根据自己写的一套根据vcproj文件生成的规则的文件生成的。由于05到13的工程文件变化比较大，修改这部分又是一个体力活了。索性就还是不改，只要保留着原来的05的proj，linux的编译就不会有问题。</p>
+<p>stack overflow和msdn在这次过程中帮了大忙，很多琐碎的问题都在上面有了解答。</p>
+<p>最最后，想说一下自己上面写的东西好啰嗦呵呵呵。文字表达能力越来越退化了。所以得坚持写blog下去！</p>
+</span>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/work/" rel="tag">#work</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/07/21/ui编辑器优化/" rel="next">UI编辑器优化</a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+            </div>
+
+            
+
+            
+              <div class="comments" id="comments">
+                
+                  <div class="ds-thread" data-thread-key="2015/08/18/vs2005升级vs2013/"
+                       data-title="从vs2005升级到vs2013" data-url="http://frozenmoon.github.io/2015/08/18/vs2005升级vs2013/">
+                  </div>
+                
+              </div>
+            
+        </div>
+
+        
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" src="/uploads/cat.jpg" alt="FrozenMoon" itemprop="image"/>
+          <p class="site-author-name" itemprop="name">FrozenMoon</p>
+        </div>
+        <p class="site-description motion-element" itemprop="description">game,cat</p>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          <div class="site-state-item site-state-categories">
+            
+              <span class="site-state-item-count">0</span>
+              <span class="site-state-item-name">分类</span>
+              
+          </div>
+
+          <div class="site-state-item site-state-tags">
+            <a href="/tags">
+              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-name">标签</span>
+              </a>
+          </div>
+
+        </nav>
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/FrozenMoon" target="_blank">github</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.zhihu.com/people/qin-yi-79" target="_blank">zhihu</a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+      </section>
+
+      
+        <section class="post-toc-wrap sidebar-panel-active">
+          <div class="post-toc-indicator-top post-toc-indicator"></div>
+          <div class="post-toc">
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备"><span class="nav-number">1.</span> <span class="nav-text">准备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">2.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#兼容xp及以上的系统。"><span class="nav-number">2.1.</span> <span class="nav-text">兼容xp及以上的系统。</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重新编译第三方库"><span class="nav-number">2.2.</span> <span class="nav-text">重新编译第三方库</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最后"><span class="nav-number">3.</span> <span class="nav-text">最后</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#未解决的问题："><span class="nav-number">3.1.</span> <span class="nav-text">未解决的问题：</span></a></li></ol></li></ol></div>
+            
+          </div>
+          <div class="post-toc-indicator-bottom post-toc-indicator"></div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+    </main>
+
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="copyright" >
+  
+  &copy; &nbsp; 
+  <span itemprop="copyrightYear">2015</span>
+  <span class="with-love">
+    <i class="icon-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">FrozenMoon</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+
+
+        </div>
+    </footer>
+
+    <div class="back-to-top"></div>
+</div>
+
+<script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  
+  
+    
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"frozenmoon"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+    
+     
+  	<script src="/js/ua-parser.min.js"></script>
+  	<script src="/js/hook-duoshuo.js"></script>
+  
+
+    
+  
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script type="text/javascript" src="/js/fancy-box.js?v=0.4.4"></script>
+
+
+  <script type="text/javascript" src="/js/helpers.js?v=0.4.4"></script>
+  
+
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js"></script>
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js"></script>
+
+  <script type="text/javascript" src="/js/motion_global.js?v=0.4.4" id="motion.global"></script>
+
+
+
+  <script type="text/javascript" src="/js/search-toggle.js"></script>
+
+
+  
+<script type="text/javascript" src="/js/bootstrap.scrollspy.js?v=0.4.4" id="bootstrap.scrollspy.custom"></script>
+
+
+<script type="text/javascript" id="sidebar.toc.highlight">
+  $(document).ready(function () {
+    var tocSelector = '.post-toc';
+    var $tocSelector = $(tocSelector);
+    var activeCurrentSelector = '.active-current';
+
+    $tocSelector
+      .on('activate.bs.scrollspy', function () {
+        var $currentActiveElement = $(tocSelector + ' .active').last();
+
+        removeCurrentActiveClass();
+        $currentActiveElement.addClass('active-current');
+
+        $tocSelector[0].scrollTop = $currentActiveElement.position().top;
+      })
+      .on('clear.bs.scrollspy', function () {
+        removeCurrentActiveClass();
+      });
+
+    function removeCurrentActiveClass () {
+      $(tocSelector + ' ' + activeCurrentSelector)
+        .removeClass(activeCurrentSelector.substring(1));
+    }
+
+    function processTOC () {
+      getTOCMaxHeight();
+      toggleTOCOverflowIndicators();
+    }
+
+    function getTOCMaxHeight () {
+      var height = $('.sidebar').height() -
+                   $tocSelector.position().top -
+                   $('.post-toc-indicator-bottom').height();
+
+      $tocSelector.css('height', height);
+
+      return height;
+    }
+
+    function toggleTOCOverflowIndicators () {
+      tocOverflowIndicator(
+        '.post-toc-indicator-top',
+        $tocSelector.scrollTop() > 0 ? 'show' : 'hide'
+      );
+
+      tocOverflowIndicator(
+        '.post-toc-indicator-bottom',
+        $tocSelector.scrollTop() >= $tocSelector.find('ol').height() - $tocSelector.height() ? 'hide' : 'show'
+      )
+    }
+
+    $(document).on('sidebar.motion.complete', function () {
+      processTOC();
+    });
+
+    $('body').scrollspy({ target: tocSelector });
+    $(window).on('resize', function () {
+      if ( $('.sidebar').hasClass('sidebar-active') ) {
+        processTOC();
+      }
+    });
+
+    onScroll($tocSelector);
+
+    function onScroll (element) {
+      element.on('mousewheel DOMMouseScroll', function (event) {
+          var oe = event.originalEvent;
+          var delta = oe.wheelDelta || -oe.detail;
+          var self = this;
+
+          this.scrollTop += ( delta < 0 ? 1 : -1 ) * 30;
+          event.preventDefault();
+
+          toggleTOCOverflowIndicators();
+      });
+    }
+
+    function tocOverflowIndicator (indicator, action) {
+      $(indicator).velocity('stop').velocity({
+        opacity: action === 'show' ? 0.4 : 0
+      }, { duration: 100 });
+    }
+
+  });
+</script>
+
+
+  <script type="text/javascript" id="sidebar.nav">
+    $(document).ready(function () {
+      var html = $('html');
+
+      $('.sidebar-nav li').on('click', function () {
+        var item = $(this);
+        var activeTabClassName = 'sidebar-nav-active';
+        var activePanelClassName = 'sidebar-panel-active';
+        if (item.hasClass(activeTabClassName)) {
+          return;
+        }
+
+        var currentTarget = $('.' + activePanelClassName);
+        var target = $('.' + item.data('target'));
+
+        currentTarget.velocity('transition.slideUpOut', 200, function () {
+          target
+            .velocity('stop')
+            .velocity('transition.slideDownIn', 200)
+            .addClass(activePanelClassName);
+        });
+
+        item.siblings().removeClass(activeTabClassName);
+        item.addClass(activeTabClassName);
+      });
+
+      $('.post-toc a').on('click', function (e) {
+        e.preventDefault();
+        var offset = $(escapeSelector(this.getAttribute('href'))).offset().top;
+        html.velocity('stop').velocity('scroll', {
+          offset: offset  + 'px',
+          mobileHA: false
+        });
+      });
+
+      // Expand sidebar on post detail page by default, when post has a toc.
+      var $tocContent = $('.post-toc-content');
+      if (isDesktop() && CONFIG.sidebar === 'post') {
+        if ($tocContent.length > 0 && $tocContent.html().trim().length > 0) {
+          displaySidebar();
+        }
+      }
+    });
+  </script>
+
+
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        if (CONFIG.sidebar === 'always') {
+            displaySidebar();
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!-- lazyload -->
+<script type="text/javascript" src="/js/lazyload.js"></script>
+<script type="text/javascript">
+    jQuery(function () {
+        jQuery("#posts img").lazyload({
+            placeholder: "/images/loading.gif",
+            effect: "fadeIn"
+        });
+    });
+</script>
+</body>
+</html>
