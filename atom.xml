@@ -286,8 +286,9 @@ public:
     <link href="http://frozenmoon.github.io/2015/05/11/hello-world/"/>
     <id>http://frozenmoon.github.io/2015/05/11/hello-world/</id>
     <published>2015-05-11T09:20:43.000Z</published>
-    <updated>2015-09-18T08:02:28.112Z</updated>
+    <updated>2015-10-15T02:36:54.250Z</updated>
     <content type="html"><![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+<a id="more"></a>
 <hr>
 <ul>
 <li>1 </li>
@@ -297,13 +298,8 @@ public:
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
-<hr>
-<ul>
-<li>1 </li>
-<li>2</li>
-<li>3 </li>
-<li>4</l]]>
+    <![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>]]>
+    
     </summary>
     
       <category term="mix" scheme="http://frozenmoon.github.io/tags/mix/"/>
