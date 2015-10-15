@@ -4,7 +4,7 @@
   <subtitle><![CDATA[game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2015-08-18T12:41:08.572Z</updated>
+  <updated>2015-10-15T02:28:57.959Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -13,6 +13,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[快与慢]]></title>
+    <link href="http://frozenmoon.github.io/2015/10/14/%E5%BF%AB%E4%B8%8E%E6%85%A2/"/>
+    <id>http://frozenmoon.github.io/2015/10/14/快与慢/</id>
+    <published>2015-10-13T16:00:00.000Z</published>
+    <updated>2015-10-15T02:28:57.959Z</updated>
+    <content type="html"><![CDATA[<p>加着班，听着《虎口脱险》。</p>
+<a id="more"></a>
+<p>前几天帮xy写一篇读后感，被吐槽口水话好多。想起了写毕业论文的时候，也是一样。<br>真是恨，想起唯一一次中学语文作文拿了全班(好像还是全年级)最高分的时候，那时的我每天坚持写日记。</p>
+<p>日子过得很慢。</p>
+<p>文字要多写，它们才会好看。</p>
+<hr>
+<p>那时的我还喜欢读书。每个学期发新书，最吸引我的是历史书，地理书。虽然每次上历史和地理课的时候都不怎么听课，只顾自己的看书。<br>还喜欢看天文的，建筑的。仔细想想，很多记忆都还很清晰。</p>
+<p>大学后，基本不怎么读书了，直到现在。一直感觉时间过得好快好快。</p>
+<p>工作后，写代码的时候也是过得很快，每次都给自己一个预期完成时间，并且争取在那之前提前能完成，那种surprise的感觉很棒，并且能有正面的积极的反馈。</p>
+<p>无限循环。太快了，我想慢下来。</p>
+<p>沉淀下来，写写字，听听歌。和自己说说话，感受身边一直忽视的小的东西，原来生活，并没有那么糟。</p>
+<p>以前每天中午吃完午饭继续回到卡位上，玩游戏，看各种现在已经不记得了的东西。没有一点空隙。<br>现在每天吃完午饭，走回家，运气好还能晒晒太阳。路上可以和自己说话，可以思考有趣的事情。</p>
+<p>差不多回到家的时候，想着有两个小生命在等着我回去，心里还是有点小激动的呢。</p>
+<p>运气好，阳光天的时候，可以在阳台和迷玩“滚滚”，听着他们的撒娇，觉得生活还是挺幸福的。</p>
+<p>我老了吗？</p>
+<p>不是。快与慢，不是绝对的存在。<br>学会控制，就像换挡一样。</p>
+<p>多看看书，写写字，和自己说说话，和别人说说话，能让自己慢下来。<br>慢下来后能感受到平时感受不到的东西。<br>那是一种踏实，切到好处的舒适。</p>
+<p>该快的时候就该快，做游戏，写代码，快速高效能保证利益最大化。</p>
+<hr>
+<p>好了，这篇类似于日记一样的东西，算是给以前的我的一个交代吧。</p>
+<p>下班回家。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>加着班，听着《虎口脱险》。</p>]]>
+    
+    </summary>
+    
+      <category term="life" scheme="http://frozenmoon.github.io/tags/life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[从vs2005升级到vs2013]]></title>
@@ -132,11 +169,9 @@ public:
     <link href="http://frozenmoon.github.io/2015/07/21/ui%E7%BC%96%E8%BE%91%E5%99%A8%E4%BC%98%E5%8C%96/"/>
     <id>http://frozenmoon.github.io/2015/07/21/ui编辑器优化/</id>
     <published>2015-07-21T09:20:43.000Z</published>
-    <updated>2015-08-04T08:41:44.159Z</updated>
-    <content type="html"><![CDATA[<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
-</code></pre><a id="more"></a>
-<hr>
-<h2 id="改造目的">改造目的</h2><ul>
+    <updated>2015-10-15T02:32:23.899Z</updated>
+    <content type="html"><![CDATA[<h2 id="说点什么吧">说点什么吧</h2><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>
+<h2 id="<!-more->"><a id="more"></a></h2><h2 id="改造目的">改造目的</h2><ul>
 <li>提高开发效率</li>
 <li>在尽可能少改动的前提下，解决热点需求即可</li>
 </ul>
@@ -144,8 +179,6 @@ public:
 <h2 id="ui编辑器简介">ui编辑器简介</h2><p>   年纪大概6，7年了吧。应该在出生后就没怎么改进过。MFC写的DLL，嵌入到游戏客户端中使用。<br>   好在有MFC基础，代码看起来挺亲切的:D<br>   需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
 <hr>
 <h2 id="改造点">改造点</h2><ol>
-<li><p>界面布局调整</p>
-</li>
 <li><p>ui列表界面：根据首字母进行排序显示，搜索功能</p>
 </li>
 <li><p>新建ui窗口流程简化： 一键生成，默认模版（对应的：一键删除）</p>
@@ -217,8 +250,8 @@ public:
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<h2 id="说点什么吧">说点什么吧</h2><pre><code>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。
-</code></pre>]]>
+    <![CDATA[<h2 id="说点什么吧">说点什么吧</h2><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>
+<h2 id="<!-more->">]]>
     
     </summary>
     
@@ -233,7 +266,7 @@ public:
     <link href="http://frozenmoon.github.io/2015/05/11/%E8%AF%BB%E8%AF%BB%E5%86%99%E5%86%99/"/>
     <id>http://frozenmoon.github.io/2015/05/11/读读写写/</id>
     <published>2015-05-11T11:20:43.000Z</published>
-    <updated>2015-07-21T10:19:55.127Z</updated>
+    <updated>2015-09-18T07:57:44.737Z</updated>
     <content type="html"><![CDATA[<p>记录使用hexo的技巧</p>
 <a id="more"></a>
 <h2 id="图片">图片</h2><p><img src="images/cat.jpg" alt=""></p>
@@ -253,12 +286,24 @@ public:
     <link href="http://frozenmoon.github.io/2015/05/11/hello-world/"/>
     <id>http://frozenmoon.github.io/2015/05/11/hello-world/</id>
     <published>2015-05-11T09:20:43.000Z</published>
-    <updated>2015-05-11T11:24:20.868Z</updated>
+    <updated>2015-09-18T08:02:28.112Z</updated>
     <content type="html"><![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
+<hr>
+<ul>
+<li>1 </li>
+<li>2</li>
+<li>3 </li>
+<li>4</li>
+</ul>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>4个月前用hexo部署了自己的第一个博客，期间一直忙着项目（lan）。<br>现在终于可以开始了。<br>最近想做的太多，但做的太少，这里希望是一个好的开始。</p>
-]]>
+<hr>
+<ul>
+<li>1 </li>
+<li>2</li>
+<li>3 </li>
+<li>4</l]]>
     </summary>
     
       <category term="mix" scheme="http://frozenmoon.github.io/tags/mix/"/>
