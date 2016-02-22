@@ -2,6 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://frozenmoon.github.io/tags/index.html</loc>
+    <lastmod>2016-02-22T03:20:06.185Z</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://frozenmoon.github.io/about/index.html</loc>
+    <lastmod>2016-02-22T03:19:55.528Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://frozenmoon.github.io/2015/05/11/hello-world/</loc>
     <lastmod>2015-10-15T02:36:54.250Z</lastmod>
   </url>
@@ -27,18 +37,8 @@
   </url>
   
   <url>
-    <loc>http://frozenmoon.github.io/about/index.html</loc>
-    <lastmod>2015-07-22T10:17:17.696Z</lastmod>
-  </url>
-  
-  <url>
     <loc>http://frozenmoon.github.io/404.html</loc>
     <lastmod>2015-07-22T05:10:14.694Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://frozenmoon.github.io/tags/index.html</loc>
-    <lastmod>2015-07-22T02:09:32.618Z</lastmod>
   </url>
   
 </urlset>
