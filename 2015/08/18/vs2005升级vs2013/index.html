@@ -39,18 +39,15 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
 
 
-<meta name="description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
-最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+<meta name="description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧，但是都过去10年了，是时候拥抱一下新的东西了:D。最近不是很忙，就把之前一直想做的这件事情做了，花了两周的时间，算是基本升级完成了，升级的过程中遇到各种问题，还是挺有意思的。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="从vs2005升级到vs2013">
 <meta property="og:url" content="http://frozenmoon.github.io/2015/08/18/vs2005升级vs2013/index.html">
 <meta property="og:site_name" content="FrozenMoon">
-<meta property="og:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
-最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+<meta property="og:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧，但是都过去10年了，是时候拥抱一下新的东西了:D。最近不是很忙，就把之前一直想做的这件事情做了，花了两周的时间，算是基本升级完成了，升级的过程中遇到各种问题，还是挺有意思的。">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="从vs2005升级到vs2013">
-<meta name="twitter:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。但是都过去10年了，是时候拥抱一下新的东西了:D。
-最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。升级的过程中遇到各种问题，还是挺有意思的。">
+<meta name="twitter:description" content="由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧，但是都过去10年了，是时候拥抱一下新的东西了:D。最近不是很忙，就把之前一直想做的这件事情做了，花了两周的时间，算是基本升级完成了，升级的过程中遇到各种问题，还是挺有意思的。">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -133,7 +130,7 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives" rel="section">
             <i class="menu-item-icon icon-archives"></i> <br />
-            归档
+            文章
           </a>
         </li>
       
@@ -149,7 +146,7 @@
         <li class="menu-item menu-item-commonweal">
           <a href="/404.html" rel="section">
             <i class="menu-item-icon icon-commonweal"></i> <br />
-            公益404
+            公益
           </a>
         </li>
       
@@ -215,11 +212,10 @@
       
 
       
-        <span itemprop="articleBody"><p>由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧。<br>但是都过去10年了，是时候拥抱一下新的东西了:D。</p>
-<p>最近不是很忙，就把之前一直想做的这件事情做了。花了两周的时间，算是基本升级完成了。<br>升级的过程中遇到各种问题，还是挺有意思的。</p>
+        <span itemprop="articleBody"><p>由于历史的原因，项目一直在使用vs2005进行开发，据说其他老一点的游戏项目很多也用05的，包括WOW，大概是因为05年正好是端游最火爆时期吧，但是都过去10年了，是时候拥抱一下新的东西了:D。<br>最近不是很忙，就把之前一直想做的这件事情做了，花了两周的时间，算是基本升级完成了，升级的过程中遇到各种问题，还是挺有意思的。</p>
 <a id="more"></a>
-<hr>
-<h2 id="准备">准备</h2><p>说起来惭愧，工作两年多还没有系统的了解过项目的工程结构，趁这个机会也可以系统的了解下。<br>结果着实吓了一跳，单是solution就有5个，project大大小小有上百个。当然了，实际用到的没有这么多 ，有部分的是以前用的工具或者已经废弃的功能。<br>由于我们平时开发都是在window上进行的，包括server也是自己编译用来单服测试，所以就存在一套linux编译的工具链，这部分成了升级的头疼问题。</p>
+<h2 id="准备">准备</h2><hr>
+<p>说起来惭愧，工作两年多还没有系统的了解过项目的工程结构，趁这个机会也可以系统的了解下。<br>结果着实吓了一跳，单是solution就有5个，project大大小小有上百个。当然了，实际用到的没有这么多 ，有部分的是以前用的工具或者已经废弃的功能。<br>由于我们平时开发都是在window上进行的，包括server也是自己编译用来单服测试，所以就存在一套linux编译的工具链，这部分成了升级的头疼问题。</p>
 <p>大概了解了一下vs2013的工程构建体系，在vs2010之后微软大改了一次构建体系，使用<strong>MSBuild</strong>系统来构建vs项目，和之前的差别还是挺大的。<br>比如05的工程后缀名是<strong>vcproj</strong>，而13的是<strong>vcxpro</strong>。之后比较了一下同样一个工程下这两种格式，发现后者比前者精简不少，确实进步了。<br>还有不得不说下MSDN的资料越来越周全了，包括vs2013工程的各种参数解释都有，还有常见的warming和error的解决方法。</p>
 <p>开始之前整理了一下几个目标点：</p>
 <ul>
@@ -228,8 +224,8 @@
 <li>梳理工程间关联</li>
 <li>修改版本发布工具（未完成）</li>
 </ul>
-<hr>
-<h2 id="开始">开始</h2><p>首先先复制一份sln，改名字，用13打开，再自动让它自动转换一下。<br>既然是自动转换，肯定是会有问题的，建议工程比较多的时候不要转换后就直接编译solution，而是从耦合度较小的工程开始一个个编译。<br>而且是每个工程都要过一遍，因为vs的自动转换非常不靠谱！</p>
+<h2 id="开始">开始</h2><hr>
+<p>首先先复制一份sln，改名字，用13打开，再自动让它自动转换一下。<br>既然是自动转换，肯定是会有问题的，建议工程比较多的时候不要转换后就直接编译solution，而是从耦合度较小的工程开始一个个编译。<br>而且是每个工程都要过一遍，因为vs的自动转换非常不靠谱！</p>
 <p>&lt; 顺序可能是：Local lib —-&gt; 3rd lib —-&gt; local dll —-&gt; local exe。local表示自己编写的工程。</p>
 <p>我们的client相对server来说，引用的lib比较多，那就先从client开始吧，难的骨头先啃掉。而client不仅仅就是一个exe，还包括各种dll，大概数了一下相关工程有30+，杯具的是我开始做的时候没想到要上InCrediBuild，导致花在编译上的时间就很多了(哭)。建议有条件的还是早早上InCrediBuild吧，能节省不少时间，13的编译速度相对05来说还是慢了一点的。<br>在这里挑出几个值得注意的点说一下：</p>
 <h3 id="兼容xp及以上的系统。">兼容xp及以上的系统。</h3><p>开始我并没有注意到这个严重的问题，后来在xp上测试的时候才发现之前一直没考虑到，所以走了一点弯路了。<br>解决方式已有很多现成的了，知乎这个回答得比较全 <a href="http://www.zhihu.com/question/25415940" target="_blank" rel="external">http://www.zhihu.com/question/25415940</a></p>
@@ -306,8 +302,8 @@ public:
         }
  <span class="comment">#endif /* _ITERATOR_DEBUG_LEVEL */</span>
 </code></pre><p>更为隐蔽的是，release版本不会有这个异常。而在vs2005上，不管debug,release都不会有异常（因为版本不一致）。<br>这样的写法肯定是存在问题的，还好这次发现了，也可以改下。</p>
-<hr>
-<h2 id="最后">最后</h2><p>最终的结果是，改动了7处代码，每个solution和proj都有对应的2013的版本，只需要把新加的这部分入库管理就好了。之后想用13开发的同事打开xx2013.sln，还继续想用05的打开原来的sln。<br>但是有一个不好的地方在于，<strong>新加文件或者工程会比较麻烦，得两种solution都要加上</strong>。</p>
+<h2 id="最后">最后</h2><hr>
+<p>最终的结果是，改动了7处代码，每个solution和proj都有对应的2013的版本，只需要把新加的这部分入库管理就好了。之后想用13开发的同事打开xx2013.sln，还继续想用05的打开原来的sln。<br>但是有一个不好的地方在于，<strong>新加文件或者工程会比较麻烦，得两种solution都要加上</strong>。</p>
 <h3 id="未解决的问题：">未解决的问题：</h3><p>还需要修改我们的版本发布工具链，因为我们要发布出去的程序都有一套编译机来进行编译，现在只能说能让我们开发的时候用到。还不能发布给用户使用。不过呢，这个过程还需慢慢推进，为了稳(mei)定(you)性(bug)。<br>client只需要在对应的编译机上安装vs2013，然后改一下编译工具应该就好了的。而真正难搞的问题是linux的编译。我们的linux编译工具是根据自己写的一套根据vcproj文件生成的规则的文件生成的。由于05到13的工程文件变化比较大，修改这部分又是一个体力活了。索性就还是不改，只要保留着原来的05的proj，linux的编译就不会有问题。</p>
 <p>stack overflow和msdn在这次过程中帮了大忙，很多琐碎的问题都在上面有了解答。</p>
 <p>最最后，想说一下自己上面写的东西好啰嗦呵呵呵。文字表达能力越来越退化了。所以得坚持写blog下去！</p>
@@ -430,7 +426,11 @@ public:
               </span>
             
               <span class="links-of-author-item">
-                <a href="http://www.zhihu.com/people/qin-yi-79" target="_blank">zhihu</a>
+                <a href="https://www.zhihu.com/people/frozenmoon" target="_blank">zhihu</a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.douban.com/people/56211199/" target="_blank">douban</a>
               </span>
             
           
