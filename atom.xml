@@ -4,7 +4,7 @@
   <subtitle><![CDATA[game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2016-05-16T08:36:14.837Z</updated>
+  <updated>2016-05-19T13:10:25.469Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -13,6 +13,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[工具链]]></title>
+    <link href="http://frozenmoon.github.io/2016/05/19/%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
+    <id>http://frozenmoon.github.io/2016/05/19/工具链/</id>
+    <published>2016-05-18T16:00:00.000Z</published>
+    <updated>2016-05-19T13:10:25.469Z</updated>
+    <content type="html"><![CDATA[<p>善于使用工具是人类和动物的最大区别。</p>
+<a id="more"></a>
+<p>以下都是我在工作机win7上用过，并且还在使用的工具和软件，体验是善于使用工具真的能让自己的世界更加美好：D。本文会持续更新，好工具还是有待发掘的。</p>
+<h4 id="Total_Commander（TC）">Total Commander（TC）</h4><p>大而全的文件管理工具，资源管理器的替代品，应该是比较老，且比较有名的工具了。我主要是用来访问常用的文件夹，以标签的形式。当然它还集成了很多小工具，比如文件批量改名，快速搜索文件内容等等。不过它对我来说功能是很多，但用到的不多，以至于它看起来不是那么简洁优雅：D<br><img src="http://o7fdw1wj9.bkt.clouddn.com/tc.png" alt="tc"></p>
+<h4 id="mRemote">mRemote</h4><p>日常开发中，测试用的服务器一般都部署虚拟机上，并且会有多台虚拟机需要管理。windows自带的远程登录在多开的情况下并不好用。发现此神器后，虚拟机的管理轻松多了，再也不用记一大堆用户名和密码了。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/mremote.png" alt="mRemote"></p>
+<h4 id="Allway_Sync">Allway Sync</h4><p>日常开发都是在本机完成的，写完代码后需要同步到各个虚拟机进行测试就是很频繁的事情了。总不能手动拷贝吧：P，用了此神器之后在本机设置一个基准目录，就可以同步到任何你要同步的机器了。并且支持手动，计划任务同步，实时同步等，不要太爽。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/allway%20sync.png" alt="Allway"></p>
+<h4 id="Link_Shell_Extension">Link Shell Extension</h4><p>同样解决同步的问题，在同一台机器上同一份代码可能需要在不同的工作目录（比如客户端）引用。写好代码总不能写好之后还要手动去同步到不同工作目录里吧。有了此神器，可以创建文件夹的符号链接，完美解决同步的问题。体积小，功能恰到好处，操作简单，赞！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/link.png" alt="Link"></p>
+<h4 id="IncrediBuild">IncrediBuild</h4><p>使用vs开发的码农必备的吧，特别是项目特别大的时候，编译整个项目可以够喝一杯咖啡了。IncrediBuild使用分布式编译的方式，搭建一个简单的服务端，让任何连接到此服务端的机器都能参与编译，机器越多编译效率越高。如果人不那么多的话，且有多余的机器（比如测试用的虚拟机）可以让这些闲置资源充分发挥效果了:D。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/incredibuild.png" alt="IncrediBuild"></p>
+<h4 id="Beyond_Compare_4">Beyond Compare 4</h4><p>文件，文件夹比较神器，用过的都知道！不同格式，甚至二进制都可以进行比较！配合SVN，进行文件比较，代码review也是不错的选择。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/beyond.png" alt="Beyond Compare"></p>
+<h4 id="Sublime_Text_3">Sublime Text 3</h4><p>简洁，优雅，插件化。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/sublime.png" alt="Sublime Text"></p>
+<h4 id="Flux">Flux</h4><p>保护视力的神器，它会根据你所在的区域，根据一天内不同的时间动态调节你的屏幕亮度。刚开始使用还有点不适应，用过一段时间明显感觉眼睛负担没那么重了，适合长期在电脑前工作的人。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/flux.png" alt="Flux"></p>
+<h4 id="ProcessOn">ProcessOn</h4><p>用过MindManager，太臃肿，太复杂，不喜欢。再用到XMIND，相对简洁优雅很多，但是！免费版很多想用的功能都没有，付费嘛，又觉得不太值。<br>直到我遇到了<br>简洁优雅，刚好满足日常的脑图，各种流程图，架构图，还能分享，还有大量可用的资源库。在web上的体验也堪比客户端。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/processon.png" alt="ProcessOn"></p>
+<h4 id="Worktile">Worktile</h4><p>作为国内创业团队的开发的一款团队协作工具，Worktile时候最近几个月我才用上的工具。在同类型的工具选择的时候，比较了Trello，Teambition，Tower。在Tower和Worktile之间，还是选择了Worktile。理由是web端做得足够好，wed的体验能做好的团队，我相信各种客户端也不会差，使用简洁也有利于团队内的其他成员接受。对了，用他的日历功能来坐个人的日常工作排期也是不错的。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/worktile.png" alt="Worktile"></p>
+<h4 id="Hexo">Hexo</h4><p>简洁，开源，搭建属于自己的博客就是那么简单！什么WordPress见鬼去吧！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/hexo.png" alt="Hexo"></p>
+<h4 id="Aseprite">Aseprite</h4><p>用来绘制像素风格图片的软件，软件本身就充满了像素风，而且支持帧动画。我的头像就是用它画的：D。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/as.png" alt="as"></p>
+<h4 id="坚果云">坚果云</h4><p>因团队需要共享，协作一些重要的文件。之前使用的服务是金山云，可惜准备关闭了sad。再寻找替代品的时候发现了坚果云，迁移过来后发现还是挺不错的。ps：百度云的协作居然要收费！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/jianguo.png" alt="jianguo"></p>
+<p>部分图片来源于网络，图侵删。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>善于使用工具是人类和动物的最大区别。</p>]]>
+    
+    </summary>
+    
+      <category term="work" scheme="http://frozenmoon.github.io/tags/work/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[选择]]></title>
