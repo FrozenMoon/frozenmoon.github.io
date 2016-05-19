@@ -4,7 +4,7 @@
   <subtitle><![CDATA[game,cat]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://frozenmoon.github.io/"/>
-  <updated>2016-05-19T13:10:25.469Z</updated>
+  <updated>2016-05-19T13:46:28.499Z</updated>
   <id>http://frozenmoon.github.io/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://frozenmoon.github.io/2016/05/19/%E5%B7%A5%E5%85%B7%E9%93%BE/"/>
     <id>http://frozenmoon.github.io/2016/05/19/工具链/</id>
     <published>2016-05-18T16:00:00.000Z</published>
-    <updated>2016-05-19T13:10:25.469Z</updated>
+    <updated>2016-05-19T13:46:28.499Z</updated>
     <content type="html"><![CDATA[<p>善于使用工具是人类和动物的最大区别。</p>
 <a id="more"></a>
 <p>以下都是我在工作机win7上用过，并且还在使用的工具和软件，体验是善于使用工具真的能让自己的世界更加美好：D。本文会持续更新，好工具还是有待发掘的。</p>
@@ -32,10 +32,10 @@
 <h4 id="Sublime_Text_3">Sublime Text 3</h4><p>简洁，优雅，插件化。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/sublime.png" alt="Sublime Text"></p>
 <h4 id="Flux">Flux</h4><p>保护视力的神器，它会根据你所在的区域，根据一天内不同的时间动态调节你的屏幕亮度。刚开始使用还有点不适应，用过一段时间明显感觉眼睛负担没那么重了，适合长期在电脑前工作的人。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/flux.png" alt="Flux"></p>
 <h4 id="ProcessOn">ProcessOn</h4><p>用过MindManager，太臃肿，太复杂，不喜欢。再用到XMIND，相对简洁优雅很多，但是！免费版很多想用的功能都没有，付费嘛，又觉得不太值。<br>直到我遇到了<br>简洁优雅，刚好满足日常的脑图，各种流程图，架构图，还能分享，还有大量可用的资源库。在web上的体验也堪比客户端。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/processon.png" alt="ProcessOn"></p>
-<h4 id="Worktile">Worktile</h4><p>作为国内创业团队的开发的一款团队协作工具，Worktile时候最近几个月我才用上的工具。在同类型的工具选择的时候，比较了Trello，Teambition，Tower。在Tower和Worktile之间，还是选择了Worktile。理由是web端做得足够好，wed的体验能做好的团队，我相信各种客户端也不会差，使用简洁也有利于团队内的其他成员接受。对了，用他的日历功能来坐个人的日常工作排期也是不错的。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/worktile.png" alt="Worktile"></p>
+<h4 id="Worktile">Worktile</h4><p>作为国内创业团队的开发的一款团队协作工具，Worktile是最近几个月我才用上的。在同类型工具选择的时候，比较了Trello，Teambition，Tower。在Tower和Worktile之间，还是选择了Worktile。理由是web端做得足够好，wed的体验能做好的团队，我相信各种客户端也不会差，使用简洁也有利于团队内的其他成员接受。对了，用他的日历功能来坐个人的日常工作排期也是不错的。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/worktile.png" alt="Worktile"></p>
 <h4 id="Hexo">Hexo</h4><p>简洁，开源，搭建属于自己的博客就是那么简单！什么WordPress见鬼去吧！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/hexo.png" alt="Hexo"></p>
 <h4 id="Aseprite">Aseprite</h4><p>用来绘制像素风格图片的软件，软件本身就充满了像素风，而且支持帧动画。我的头像就是用它画的：D。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/as.png" alt="as"></p>
-<h4 id="坚果云">坚果云</h4><p>因团队需要共享，协作一些重要的文件。之前使用的服务是金山云，可惜准备关闭了sad。再寻找替代品的时候发现了坚果云，迁移过来后发现还是挺不错的。ps：百度云的协作居然要收费！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/jianguo.png" alt="jianguo"></p>
+<h4 id="坚果云">坚果云</h4><p>因团队需要共享，协作一些重要的文件。之前使用的服务是金山快盘，可惜准备关闭了sad。再寻找替代品的时候发现了坚果云，迁移过来后发现还是挺不错的。呵呵，百度云的协作居然要收费！<br><img src="http://o7fdw1wj9.bkt.clouddn.com/jianguo.png" alt="jianguo"></p>
 <p>部分图片来源于网络，图侵删。</p>
 ]]></content>
     <summary type="html">
