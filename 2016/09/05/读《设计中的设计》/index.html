@@ -28,7 +28,7 @@
 
 
 
-  <meta name="keywords" content="program,work," />
+  <meta name="keywords" content="Read," />
 
 
 
@@ -39,15 +39,20 @@
   <link rel="shorticon icon" type="image/x-icon" href="/favicon.ico?v=0.4.4" />
 
 
-<meta name="description" content="最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
+<meta name="description" content="「我写这本书的初衷，是想写一本一般人也能阅读的书」  原研哉">
 <meta property="og:type" content="article">
-<meta property="og:title" content="UI编辑器优化">
-<meta property="og:url" content="http://frozenmoon.github.io/2015/07/21/ui编辑器优化/index.html">
+<meta property="og:title" content="读《设计中的设计》">
+<meta property="og:url" content="http://frozenmoon.github.io/2016/09/05/读《设计中的设计》/index.html">
 <meta property="og:site_name" content="FrozenMoon">
-<meta property="og:description" content="最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
+<meta property="og:description" content="「我写这本书的初衷，是想写一本一般人也能阅读的书」  原研哉">
+<meta property="og:image" content="http://o7fdw1wj9.bkt.clouddn.com/book_design_1.jpg">
+<meta property="og:image" content="http://o7fdw1wj9.bkt.clouddn.com/book_design_2.jpg">
+<meta property="og:image" content="http://o7fdw1wj9.bkt.clouddn.com/book_design_4.jpg">
+<meta property="og:image" content="http://o7fdw1wj9.bkt.clouddn.com/book_design_3.jpg">
+<meta property="og:image" content="http://o7fdw1wj9.bkt.clouddn.com/book_design_5.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="UI编辑器优化">
-<meta name="twitter:description" content="最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。">
+<meta name="twitter:title" content="读《设计中的设计》">
+<meta name="twitter:description" content="「我写这本书的初衷，是想写一本一般人也能阅读的书」  原研哉">
 
 
 <script type="text/javascript" id="hexo.configuration">
@@ -57,7 +62,7 @@
   };
 </script>
 
-    <title> UI编辑器优化 // FrozenMoon </title>
+    <title> 读《设计中的设计》 // FrozenMoon </title>
 </head>
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 <!--[if lte IE 8]>
@@ -177,7 +182,7 @@
           
           
             
-              UI编辑器优化
+              读《设计中的设计》
             
           
         </h1>
@@ -186,8 +191,8 @@
       <div class="post-meta">
         <span class="post-time">
           发表于
-          <time itemprop="dateCreated" datetime="2015-07-21T17:20:43+08:00" content="2015-07-21">
-            2015-07-21
+          <time itemprop="dateCreated" datetime="2016-09-05T00:00:00+08:00" content="2016-09-05">
+            2016-09-05
           </time>
         </span>
 
@@ -197,8 +202,8 @@
           
             <span class="post-comments-count">
               &nbsp; | &nbsp;
-              <a href="/2015/07/21/ui编辑器优化/#comments" itemprop="discussionUrl">
-                <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/21/ui编辑器优化/" itemprop="commentsCount"></span>
+              <a href="/2016/09/05/读《设计中的设计》/#comments" itemprop="discussionUrl">
+                <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/05/读《设计中的设计》/" itemprop="commentsCount"></span>
               </a>
             </span>
           
@@ -212,86 +217,33 @@
       
 
       
-        <span itemprop="articleBody"><p>最近项目也挺忙的，一直想抽时间来改改我们项目的ui编辑器，只能用挤出来的时间来做了。</p>
-<a id="more"></a>
-<h2 id="改造目的">改造目的</h2><hr>
-<ul>
-<li>提高开发效率</li>
-<li>在尽可能少改动的前提下，解决热点需求即可</li>
-</ul>
-<h2 id="ui编辑器简介">ui编辑器简介</h2><hr>
-<p>年纪大概6，7年了吧。应该在出生后就没怎么改进过。MFC写的DLL，嵌入到游戏客户端中使用，好在有MFC基础，代码看起来挺亲切的:D。<br>需求完全是靠自己去想，平时用的时候有什么不爽的地方重要可以改掉，也可以过过PM的瘾。</p>
-<h2 id="改造点">改造点</h2><hr>
-<ol>
-<li><p>ui列表界面：根据首字母进行排序显示，搜索功能</p>
-</li>
-<li><p>新建ui窗口流程简化： 一键生成，默认模版（对应的：一键删除）</p>
-</li>
-<li><p>新建控件优化：默认控件模版</p>
-</li>
-<li><p>编辑器模式下控件默认可拖动</p>
-</li>
-<li><p>主窗口的相对位置</p>
-</li>
-</ol>
-<h2 id="解决方案">解决方案</h2><hr>
-<p>1.ui列表界面：原来的设计只是简单的读取ui列表，放入ListView中</p>
-<ul>
-<li><p>痛点：列表显示非常杂乱，且没有排序规则</p>
+        <span itemprop="articleBody"><p><img src="http://o7fdw1wj9.bkt.clouddn.com/book_design_1.jpg" alt="tc"><br><strong>「我写这本书的初衷，是想写一本一般人也能阅读的书」  原研哉</strong><br><a id="more"></a></p>
+<p>作为程序员和半吊子游戏设计师，一直对设计这个词颇为敏感而迷惑。在生活中，设计随处可见。路边的广告牌，电视，各类网站，手机，手机上的app。然而，什么是设计？设计的本质是什么？什么是好的设计？是我这类普通人望而却步的难题。偶然的机会看到这本书，马上被他的封面所吸引，使用大量的留白的封面，简约的风格让我隐约的感受到，这是一本值得一看的书。</p>
+<h3 id="什么是设计">什么是设计</h3><hr>
+<p>在本书中，原研哉先生在多处提到了设计的本质。这是他从业二十多年来，以时代为轮，经验为轴，对设计本质的反复思考后的结果。</p>
 <blockquote>
-<p>根据首字母进行排序：CListView.SortItem 搞定。</p>
+<p>  设计就是将人类生活或生存的意义通过制作过程予以解释；<br>  设计不是一种技能，而是捕捉事物本质的感觉能力和洞察能力;<br>  设计更侧重于社会，解决社会上多数人面临的问题，即满足人的需求。</p>
 </blockquote>
-</li>
-<li><p>痛点：没有搜索功能，要查找某个ui的时候只能靠人肉！</p>
-<blockquote>
-<p>搜索优化：最初的想法是加入一个edit，在输入变化的时候自动选中对应的item项。但是在尝试做了之后发现几个问题：<br>ListView的选中功能实在太弱，并且需要具有焦点的时候才能选中（有总是选中的属性，但是不符合需求），尝试未果之后考虑有没有其他的方式。<br>最后决定用动态删减ListViewItem的方式来解决这个问题：每次输入变化的时候，清空ListView，遍历ui列表，insert符合要求的ui。</p>
-</blockquote>
-</li>
-<li><p>痛点：由于加入搜索功能，dlg打开的时候焦点默认给到edit：</p>
-<blockquote>
-<p>细节更闪亮:D</p>
-</blockquote>
-</li>
-</ul>
-<p>2.新建窗口</p>
+<p>当我读到这些地方的时候，总有被点醒的感觉，噢，原来设计是这样的。把本来具象的事物高度概括和抽象之后，设计的本质其实就是这么简单。这里所说的设计，并不只是平面设计，工业设计，建筑设计，而是所有设计的本源。  </p>
+<p>那么对于游戏设计呢？我从小就玩游戏，现在进入了游戏行业工作，但是对于游戏设计到底是什么似乎还很模糊。不仅仅是我，包括身边，我们观察到的游戏行业的大多数人似乎都没有去探究游戏设计的本质是什么。可能现在有一点概念了，仔细思考上面三句话，对于游戏来说，不也是这样吗？是也不是；是或不是并没有那么重要，重要的是我们去思考了，去探索了，可能离终点很远，也可能没有终点。  </p>
+<p>此外，对于艺术和设计的区别，原研哉先生认为艺术是艺术家在面对社会时的意志表达。艺术往往不会考虑受众是谁，而设计却不是这样的。我们把艺术的范围再具体一点，到电影，音乐上，有很多可以称得上艺术的表达，并冠于其“独立”的前缀。比如JohnLennon《Imagine》呼吁停止战争，幻想一个永远没有冲突的世界；MJ《EarthSong》希望唤起人们保护环境的意识。对于独立游戏，则在自我的意志表达上比较缺失。作为第九艺术的游戏，在这方面来说比起电影，音乐这些普遍意义上的艺术，还是差了一点。希望后面会有更多个人意志表达的游戏作品出现。</p>
+<h3 id="什么是好设计">什么是好设计</h3><hr>
+<p>对于设计好坏的评判本来就是非常主观的。更为奇妙的是，尽管很多时候我们觉得某些设计很好，但我们却不能把他具体的表达出来。我们看过很多经典的电影，看完之后回味无穷，沉浸其中久久不能平静，但往往又不能说清楚为什么会有这种感觉。这就是设计的力量。设计是潜移默化的，好的设计就像是看不见的双手，它可以操纵你的情绪，让你悲伤，让你欢乐，让你愤怒，让你平静。  </p>
+<p>在本书中，我最喜欢的部分在之一是第二章《RE-DESIGN 二十一世纪的日常用品再设计》。在本章中，原研哉通过自己举办的RE-DESIGN设计展，汇集了多名优秀的设计师对我们日常生活中的普通物品进行了再设计。每一个设计案例都让我看到到了设计师们对于事物的本质思考过程，感受到了即使是再普通的物品，也能通过设计将一些意识和力量注入进去，并传达给人们。其中，建筑家坂茂先生设计的四角形卷筒卫生纸最为印象深刻。<br><img src="http://o7fdw1wj9.bkt.clouddn.com/book_design_2.jpg" alt="tc"></p>
+<p>这个设计的用心之处在于，当你抽取的时候会产生阻力，这种阻力发出的信息便是节约能源，而不像传统的圆桶卫生纸那样顺滑的抽取。并且，四角的设计更利于卫生纸的排列与堆放，节约了空间，方便储存和搬运。这真是一个好的设计！</p>
+<h3 id="日本的艺术和设计">日本的艺术和设计</h3><hr>
+<p>我今年更深入了解日本这个国家。原因是看了很多部日本的电视剧，电影。比如《白色巨塔》《深夜食堂》《菊次郎的夏天》《坏孩子的天空》《小森林》。还有书《白夜行》《设计中的设计》。有对腐败体制的揭露；发现美食与人性的关系；人不同年龄段的生活意愿表达；对罪恶和爱的矛盾；对设计的本质思考等等。  </p>
+<p>对于日本人，真心觉得他们对人性的思考真的是非常深入。可能不只是人性，他们似乎对任何事物都会进行反复，深入的思考，探究其本源。对于日本的游戏，则更是让我们中国游戏汗颜。且不说《超级马里奥》系列，《塞尔达传说》系列，《最终幻想》系列在世界范围内的风靡。属于中国的《三国志》居然被日本的公司做成游戏并取得了成功。任天堂这样的游戏公司，恐怕在中国很难会出现吧。</p>
+<p>回到设计领域，有两个我们普通民众接触到更多的品牌是优衣库和无印良品了。对于我，更是受这两个的品牌影响极大。这个影响并不是说我买了他们的多少东西，而是他们引发了我对美好的生活方式的追求。我开始喜欢简约的东西，包括衣服，几乎都是纯色的，并且以黑白灰三色为主；优衣库给我的传达的设计是，没有特点，价格合适，质量还行。嗯，这样就好了。无印良品给我的传达的设计是对生活品质的追求，感受到日常事物背后的美好。比如他们的那台熏香机，每次打开它的时候，总会有一种温暖安心的感觉，提醒我一天就快结束了，好好睡一觉吧。嗯，这样就好。原研哉先生作为无印良品的设计委员会成员之一，在书中也表达了无印良品的设计理念，其实很简单，就是「这样就好」。</p>
+<h3 id="后话">后话</h3><hr>
+<p>对于我这样一个原本对设计没什么认知的人来说，这本书的写作目的已经达到了。唠唠叨叨那么多，其实尽是我零散的思考。最近的我苦于在游戏设计中进行探索，这本书也让我找到了些许动力和灵感。另外，对于本书的图书方面的质量，还是有一点瑕疵的，虽然说无伤大雅，但是作为一本设计书，在编排方面还是需要多用心把细节做好：  </p>
 <ul>
-<li><p>痛点：之前添加一个ui非常麻烦，要手动添加很多东西，而且是程序自己来干这个事情，费时费力。</p>
-<blockquote>
-<p>在编辑器提供一键创建窗口，可以让策划或者ui设计师来制作ui。<br>基本都是字符串和文件操作，由于原有的体系比较繁杂，有部分硬编码，健壮性稍差。</p>
-</blockquote>
-</li>
-<li><p>痛点：既然有生成就要对应删除</p>
-<blockquote>
-<p>就是生成过程的反过程，编码比较“硬”，纯属体力活了。</p>
-</blockquote>
-</li>
+<li>书中的插图很多都没有和文字内容一一对应，且经常出现一句话被两页的图生生分成两半的尴尬场景。</li>
+<li>少量的标点符号与文字的间隔不统一。</li>
+<li>书的后半段内容的似乎定位过于宏观，且分析不够深入，案例不够丰富。</li>
 </ul>
-<p>3.新建控件默认模版：</p>
-<ul>
-<li>痛点1：创建后没有默认参数！比如创建一个按钮，还有手动去改大小，图片，颜色等，非常麻烦。<blockquote>
-<p>给各个控件配置默认的模版参数，这样只需要稍做修改就能完成需求。（每种控件都对应一个配置lua脚本）</p>
-</blockquote>
-</li>
-</ul>
-<p>4.可拖动控件</p>
-<ul>
-<li>痛点：不能拖动控件的编辑器怎么能叫编辑器！我们之前还用了好几年ORZ。<blockquote>
-<p>当用编辑器打开窗口后，设置控件的可移动属性为true即可。问题在于我们的ui控件都是自己写的一套，所以有些控件并不支持窗口的移动。<br>只能改动各种控件的消息处理代码了。</p>
-</blockquote>
-</li>
-</ul>
-<p>5.窗口的动态停靠位置（Dock）</p>
-<ul>
-<li>痛点：以前我们客户端的窗口大小是固定4个模式的，不同模式下的窗口位置定义都是写死的！大约1年前，改成了客户端可以自由改变大小，但编辑器没有对应的更新。<blockquote>
-<p>编辑器可改变DockType，x,y 的偏移量。做到所见即所得。</p>
-</blockquote>
-</li>
-</ul>
-<p>n.其他细节</p>
-<ul>
-<li>打开ui后，控件树默认展开Main项。</li>
-<li>处理了发现的遗留的bug</li>
-</ul>
+<p>当然，只是我个人一些吹毛求疵的评价，并不影响本书本身的优秀，绝对值得一读:D。<br>下面是一些本书中精彩的设计，仅供赏析。</p>
+<p><img src="http://o7fdw1wj9.bkt.clouddn.com/book_design_4.jpg" alt="tc"><br><img src="http://o7fdw1wj9.bkt.clouddn.com/book_design_3.jpg" alt="tc"><br><img src="http://o7fdw1wj9.bkt.clouddn.com/book_design_5.jpg" alt="tc"></p>
 </span>
       
     </div>
@@ -300,9 +252,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/program/" rel="tag">#program</a>
-          
-            <a href="/tags/work/" rel="tag">#work</a>
+            <a href="/tags/Read/" rel="tag">#Read</a>
           
         </div>
       
@@ -311,13 +261,11 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2015/08/18/vs2005升级vs2013/" rel="prev">从vs2005升级到vs2013</a>
-            
           </div>
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2015/05/11/读读写写/" rel="next">hexo 使用之路</a>
+              <a href="/2016/08/22/游戏体验《Uncle Go》/" rel="next">游戏体验《Uncle GO》</a>
             
           </div>
         </div>
@@ -343,8 +291,8 @@
             
               <div class="comments" id="comments">
                 
-                  <div class="ds-thread" data-thread-key="2015/07/21/ui编辑器优化/"
-                       data-title="UI编辑器优化" data-url="http://frozenmoon.github.io/2015/07/21/ui编辑器优化/">
+                  <div class="ds-thread" data-thread-key="2016/09/05/读《设计中的设计》/"
+                       data-title="读《设计中的设计》" data-url="http://frozenmoon.github.io/2016/09/05/读《设计中的设计》/">
                   </div>
                 
               </div>
@@ -442,7 +390,7 @@
           <div class="post-toc">
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#改造目的"><span class="nav-number">1.</span> <span class="nav-text">改造目的</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ui编辑器简介"><span class="nav-number">2.</span> <span class="nav-text">ui编辑器简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改造点"><span class="nav-number">3.</span> <span class="nav-text">改造点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解决方案"><span class="nav-number">4.</span> <span class="nav-text">解决方案</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是设计"><span class="nav-number">1.</span> <span class="nav-text">什么是设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是好设计"><span class="nav-number">2.</span> <span class="nav-text">什么是好设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日本的艺术和设计"><span class="nav-number">3.</span> <span class="nav-text">日本的艺术和设计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后话"><span class="nav-number">4.</span> <span class="nav-text">后话</span></a></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator"></div>
